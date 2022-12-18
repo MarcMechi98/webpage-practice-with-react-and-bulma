@@ -1,0 +1,13 @@
+PROPS SYSTEM
+É o jeito de comunicar entre o parent e child component
+Allows the PARENT to configure each child differently
+ONE WAY FLOW OF DATA --> the child component CAN'T PUSH PROPS TO THE PARENT
+    O parent component vai criar um object chaado PROPS pra cada child component
+que eu coloquei properties
+    Pra usar essas properties dentro do child component eu preciso passar o 
+props object como argument e é melhor eu ja fazer destructuring das properties que eu vou usar
+    IMPORTANDO FILES
+    SÓ JS FILES que eu nao preciso adicionar a extensao no nome
+    ex: './App'
+    QUALQUER outro tipo de file, eu preciso por a extension
+    ex: './images/alexa.png'

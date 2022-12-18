@@ -1,7 +1,19 @@
-function ProfileCard() {
+/* function ProfileCard(props) {
     return (
         <div>
-            Profile Card
+            <div>Title is: {props.title}</div>
+            <div>Handle is: {props.handle}</div>
+        </div>
+    )
+} */
+
+//DESTRUCTURING THE PROPERTIES MAKE IT LOOK CLEANER
+function ProfileCard({ title, handle, image, alt }) {
+    return (
+        <div>
+            <img alt={alt} src={image} />
+            <div>Title is: {title}</div>
+            <div>Handle is: {handle}</div>
         </div>
     )
 }
