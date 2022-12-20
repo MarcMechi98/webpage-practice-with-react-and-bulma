@@ -1,13 +1,3 @@
-/* function ProfileCard(props) {
-    return (
-        <div>
-            <div>Title is: {props.title}</div>
-            <div>Handle is: {props.handle}</div>
-        </div>
-    )
-} */
-
-//DESTRUCTURING THE PROPERTIES MAKE IT LOOK CLEANER
 function ProfileCard({ title, handle, image, alt, description }) {
     return (
         <div className='card' style={{ minHeight: "100%" }}>
