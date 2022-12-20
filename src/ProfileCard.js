@@ -8,12 +8,28 @@
 } */
 
 //DESTRUCTURING THE PROPERTIES MAKE IT LOOK CLEANER
-function ProfileCard({ title, handle, image, alt }) {
+function ProfileCard({ title, handle, image, alt, description }) {
     return (
-        <div>
-            <img alt={alt} src={image} />
-            <div>Title is: {title}</div>
-            <div>Handle is: {handle}</div>
+        <div className='card' style={{ minHeight: "100%" }}>
+
+            {/* Logo Image */}
+            <div className='card-image'>
+                <fugure className='image is-1by1'>
+                    <img alt={alt} src={image} />
+                </fugure>
+            </div>
+
+            {/* Card Text */}
+            <div className="card-content">
+                <div className="media-content">
+                    <p className="title is-4">{title}</p>
+                    <p className="subtitle is-6">{handle}</p>
+                </div>
+                <div className="content">
+                    {description}
+                </div>
+            </div>
+
         </div>
     )
 }
